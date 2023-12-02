@@ -6,25 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <iframe id="myIframe" src="about:blank" width="600" height="400"></iframe>
-
-    <script>
-    // Get a reference to the iframe
-    const iframe = document.getElementById('myIframe');
-
-    // Set the content of the iframe
-    // Make an HTTP request from within the iframe
-    const xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
-    xhr.open('POST', 'http://localhost:2222/?username=AStaceyann16&password=junior1&submit=submit', true);
-    //xhr.open('POST', 'http://localhost:2222/loggedIn', true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-        // Do something with the response
-        console.log(xhr.responseText);
-        }
-    };
-    xhr.send();
+    <iframe src
     </script>
 </body>
 </html>
